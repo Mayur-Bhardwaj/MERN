@@ -10,6 +10,9 @@
         <th> :- Table Header. It is used to define header cells within a row.
         <td>:- Table Data. This holds the actual data. -->
      <table border="5">
+        <!-- Caption :-  It is the title or description of table.
+         Must be inserted after immediately <table> -->
+        <caption>Student Information</caption>
         <tr> <th>S. No.</th>
             <th>Name</th>
             <th>Subject</th>
@@ -21,6 +24,7 @@
             <td>Rohan</td>
             <td>Science</td>
             <td>89%</td>
+            <td rowspan="5">This is row span.</td>
         </tr>
         <tr>
             <td>2</td>
@@ -46,6 +50,16 @@
             <td>Computer</td>
             <td>90%</td>
         </tr>
+        <!-- ColSpan:- Used the colspan attribute in <td> or <th> -->
+            <tr>
+                <td colspan="5">This cell spans 5 Columns</td>
+            </tr>
+            <!-- RowSpan:- Indicates how many rows a cell should cover. Using `rowspan="0"` instructs the browser to extend the cell to the last row of the table section -->
+             <tr>
+                
+             </tr>
     </table>
 </body>
 </html>
+
+
