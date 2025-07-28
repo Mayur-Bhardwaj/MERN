@@ -27,7 +27,7 @@ I'm Mayur Bhardwaj. Welcome to my GitHub profile!
 ## 🤝 Connect with me
 
 <p>
-  <a href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank">
+  <a href="https://www.linkedin.com/in/mayur-bhardwaj-825636226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="40" height="40"/>
   </a>
 </p>
