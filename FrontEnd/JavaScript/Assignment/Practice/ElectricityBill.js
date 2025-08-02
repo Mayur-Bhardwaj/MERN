@@ -29,7 +29,7 @@
 // Total bill with additional charge = 228
 
 
-let units = 220;
+let units = 300;
 console.log("Total units is",units);
 let amt = 0;
 
@@ -44,11 +44,15 @@ amt = 50*1 + (units - 50)*2;
 }
 let surcharge =0;
 if(units>150){
-  surcharge = (units+20)/100;
+  surcharge = amt*0.2;
   let totalBill = surcharge+amt;
   console.log(`Your Electricity Bill is ${totalBill}`);
 }
 
 // Output:-
 // Total units is 220
-// Your Electricity Bill is 462.4
+// Your Electricity Bill is 552
+
+// Output:-
+// Total units is 300
+// Your Electricity Bill is 900
