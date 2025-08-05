@@ -1,0 +1,51 @@
+ <!-- Variables: Variables are the containers, used to store the data. 
+  
+ Variables cannot start with number.
+ No special character other than $ and _ .
+ Can't use reserved words.
+ "=" is used for assignment.
+ ";" means end of instruction;
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+</head>
+<body>
+  <script>
+    let welcomeMessage = 'Hello Friends';
+    console.log('hello friends');
+    console.log(welcomeMessage);
+
+
+    let bagPrice = (15599 - (10/100 * 15599)) - 272;
+    let jeansPrice= (2499 - (41/100*2499))-29;
+    let bagValue = Math.round((jeansPrice + bagPrice + 25 + 20) * 118/100);
+    let bagSummary = `Your Final Myntra Bag amount is ₹${bagValue}`;
+    console.log(bagSummary);   // Your Final Myntra Bag amount is ₹18004
+
+
+    // Updating values :
+
+    let students = 5;
+    students= students+1  //6
+    let marks=1;
+    marks+=1 //marks = marks+1
+    
+    let a  = 5;
+    let b = 4;
+    let c = a+4;
+    console.log(c); //9
+    c = b+2;
+    console.log(c); //8
+
+    let i =5;
+    console.log(i);  //5
+    i = i+5;
+    console.log(i);  //10
+  </script>
+</body>
+</html>
