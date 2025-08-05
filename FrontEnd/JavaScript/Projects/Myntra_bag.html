@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Project</title>
+  <link rel="stylesheet" href="MyntraCss.css">
+</head>
+<body>
+   <button class="bag-btn" onclick="
+   cartQty= cartQty+1;  // cartQty +=1  or cartQty++
+        document.querySelector('#cart-summary').innerHTML = `Your bag has ${cartQty} items.`;
+ ">Add To Bag</button>
+  <button class="wish-btn" onclick="cartQty= cartQty-1;   // cartQty -=1  or cartQty--
+        document.querySelector('#cart-summary').innerHTML = `Your bag has ${cartQty} items.`;">❤️Move to WishList</button>
+     <button class="bag-btn" onclick="cartQty= cartQty+2;  // cartQty+=2
+        document.querySelector('#cart-summary').innerHTML = `Your bag has ${cartQty} items.`;">Add 1+1 sale Item</button> 
 
+    <h1 id="cart-summary"></h1>
+
+    <script>
+      let cartQty = 5;
+      document.querySelector("#cart-summary").innerHTML = `Your bag has ${cartQty} items.`;
+      // first we select the tag through id.
+      // inner text  is used to change the text.
+    </script>
+</body>
+</html>
