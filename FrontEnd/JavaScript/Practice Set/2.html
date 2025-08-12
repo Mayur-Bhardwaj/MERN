@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+</head>
+<body>
+  <!-- 1. Save your name in a variable inside script tag.
+   2. Display your name into the page.
+   3. Calculate the cost of Myntra Bag and keep it in a variable.
+   4. Show it to console.
+   5. Keep GST percentage as constant.
+   6. Use eval method from math to convert string calculation into result.-->
+
+    <h1 id="my-name"></h1>
+
+<script>
+  const myName = "Mayur Bhardwaj";
+  document.querySelector("#my-name").innerHTML = myName;
+
+  let GstPercentage = 18;
+  let cartValue =  Math.round(((15599 - (10/100 * 15599))- 272 + (2499 - (41/100*2499)) - 29 + 25 +20) * (100 + GstPercentage) /100);
+  console.log(cartValue);  // 18004
+
+  console.log(eval("12+3+17-8*2"));  //16
+
+  // EVAL --> In JavaScript, eval() is a built-in global function that executes a string of code as if it were JavaScript code. It takes a single argument, which is the string containing the code to be evaluated.
+
+  // If the string contains a JavaScript expression, eval() evaluates the expression and returns its result. For example, eval("1 + 1") would return 2.
+
+</script>
+</body>
+</html>
