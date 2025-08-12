@@ -46,6 +46,23 @@
     console.log(i);  //5
     i = i+5;
     console.log(i);  //10
+
+    let pi = 3.14159265359;
+    let radius = 4;
+    console.log(pi *radius*radius);   // 50.26548245744
+
+    // Now if someone change the value
+
+    let pi1 = 3.14159265359;
+    let radius1 = 4;
+    pi1 = 2;
+    console.log(pi1 *radius1*radius1);  //32 change the value but pi value is universal.
+
+    // Use it
+    const pi2 = 3.14159265359;
+    let radius2 = 4;
+    pi2 = 6;
+    console.log(pi *radius2*radius2);  //Variable.html:64 Uncaught TypeError: Assignment to constant variable.
   </script>
 </body>
 </html>
