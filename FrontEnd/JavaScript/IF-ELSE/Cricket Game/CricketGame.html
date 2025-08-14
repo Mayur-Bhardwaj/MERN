@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <title>Cricket Game</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bat Ball Stump Game </h1>
+   <button onclick="
+   console.log('You choose Bat');
+   // This will generate number b/w 0 to 3. Basically random method is generate number b/w 0 & 1.but here we define range
+   let randomNumber = Math.random()*3;
+   if(randomNumber>0 & randomNumber<=1){
+    let computerChoice = 'Bat';
+   }else if(randomNumber >1 & randomNumber <=2){
+    let computerChoice = 'Ball';
+   }else{
+    let computerChoice = 'Stump'; 
+   }
+   ">Bat</button> <!-- onClick is used  kyuki hm chate hai ke bat pr click krne pr kuch event ho..-->
+  <button>Ball</button>
+  <button>Stump</button>
+  <script>
+    // User choose from his/her side bat, ball or stumps. The PC ramdom choose the bat,ball or stump.
 
+  </script>
+</body>
+</html>
