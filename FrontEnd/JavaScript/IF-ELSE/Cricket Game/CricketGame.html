@@ -9,18 +9,42 @@
 <body>
   <h1>Bat Ball Stump Game </h1>
    <button onclick="
-   console.log('You choose Bat');
+   const userMsg = '';
    // This will generate number b/w 0 to 3. Basically random method is generate number b/w 0 & 1.but here we define range
    let randomNumber = Math.random()*3;
-   if(randomNumber>0 & randomNumber<=1){
-    let computerChoice = 'Bat';
-   }else if(randomNumber >1 & randomNumber <=2){
-    let computerChoice = 'Ball';
+    let computerChoice;
+   if(randomNumber>0 && randomNumber<=1){
+    computerChoice = 'Bat';
+    // console.log('Computer choice is Bat');
+   }else if(randomNumber >1 && randomNumber <=2){
+    computerChoice = 'Ball';
+    // console.log('Computer choice is Ball');
    }else{
-    let computerChoice = 'Stump'; 
+     computerChoice = 'Stump';
+    //  console.log('Computer choice is Stump'); 
    }
+
+  //  const computerChoiceMSg = ``;
+
+   let resultMsg;
+     if(computerChoice === 'Ball'){
+    resultMsg = 'User Won !!';
+   }else if(computerChoice === 'Bat'){
+    resultMsg = `It's a Tie`;
+   } else if(computerChoice === 'Stump'){
+   resultMsg = 'Computer has won';
+   }
+    
+   alert(`You choose Bat. Computer Choice is ${computerChoice} and  ${resultMsg}`);
+
    ">Bat</button> <!-- onClick is used  kyuki hm chate hai ke bat pr click krne pr kuch event ho..-->
-  <button>Ball</button>
+
+ 
+
+
+  <button onclick="
+  console.log('You choose Ball')
+  ">Ball</button>
   <button>Stump</button>
   <script>
     // User choose from his/her side bat, ball or stumps. The PC ramdom choose the bat,ball or stump.
