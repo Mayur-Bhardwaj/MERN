@@ -14,3 +14,13 @@ console.log(str);
 // str = "**" + * ==> ***       when i = 3
 // str = "***" + * ==> ****     when i = 4
 // str = "****" + * ==> *****   when i = 5
+
+
+// 12345
+
+let string = "";
+for(let i=1; i<=5; i++){
+  string = string + i;
+  
+}
+console.log(string);
