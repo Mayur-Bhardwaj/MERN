@@ -1,0 +1,60 @@
+<!-- The IF Alternatives are:-
+ 1. Ternary Operator: condition ? trueValue : falseValue
+ 2. Guard Operartor: value || defaultValue, use when a fallback value is needed.
+ 3. Default Operator: value ?? falbackValue, use when you want to consider only null and undefined as falsy.
+ 4. Simplifies: conditional logic.
+ 5. Use: wisely to maintain readibility. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IF Alternatives</title>
+</head>
+<body>
+  <script>
+    // let age = 12;
+    // let result;
+    // if(age>18){
+    //   result = "Adult";
+    // }else{
+    //   result = "Kid";
+    // }
+    // console.log(result);
+
+    // Ternary Operator : condition ? true : false
+
+    // let age = 18;
+
+    // let result = age >= 18 ? "Adult" : "Kid";
+    // console.log(result);  // Adult
+
+    // Guard Operator : This is use when a fallback value is needed. It is used to define default value.
+
+    // If someone not know their age so default value print
+    
+    // let age = 32;
+    // let finalAge = age || 18;
+    // console.log(finalAge); //32
+    // Now not know age
+    
+    // let age;
+    // let finalAge = age || 18;
+    // console.log(finalAge); //18
+
+    //Default Operator
+
+        let age;
+    let finalAge = age ?? 18;
+    console.log(finalAge); //18
+
+// Guard Operator see the left operator for falsy, or if we want that only null and undefined is falsy then we use default operator.
+
+
+  </script>
+  <!-- Output  : Kid -->
+</body>
+</html>
